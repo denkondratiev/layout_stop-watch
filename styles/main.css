@@ -36,8 +36,8 @@ body {
 
 .minute__arrow {
   width: 12px;
-  -webkit-animation: timer 30s linear infinite;
-          animation: timer 30s linear infinite; }
+  -webkit-animation: timer 3600s linear infinite;
+          animation: timer 3600s linear infinite; }
   .minute__arrow::before {
     background: #d15559;
     height: 40%;
@@ -45,8 +45,8 @@ body {
 
 .second__arrow {
   width: 10px;
-  -webkit-animation: timer 15s linear infinite;
-          animation: timer 15s linear infinite; }
+  -webkit-animation: timer 60s linear infinite;
+          animation: timer 60s linear infinite; }
   .second__arrow::before {
     background: #4b9aaa;
     height: 50%;
