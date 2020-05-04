@@ -14,43 +14,38 @@ body {
     position: absolute;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
     background-color: #4b9aaa; }
-
-.minute__arrow,
-.second__arrow {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: 0 auto; }
-  .minute__arrow::before,
-  .second__arrow::before {
-    content: "";
+  .clock__minute, .clock__second {
     position: absolute;
-    border-radius: 15px;
-    bottom: 50%; }
-
-.minute__arrow {
-  width: 12px;
-  -webkit-animation: timer 3600s linear infinite;
-          animation: timer 3600s linear infinite; }
-  .minute__arrow::before {
-    background: #d15559;
-    height: 40%;
-    width: 12px; }
-
-.second__arrow {
-  width: 10px;
-  -webkit-animation: timer 60s linear infinite;
-          animation: timer 60s linear infinite; }
-  .second__arrow::before {
-    background: #4b9aaa;
-    height: 50%;
-    width: 10px; }
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+    .clock__minute::before, .clock__second::before {
+      content: "";
+      position: absolute;
+      border-radius: 15px;
+      bottom: 50%; }
+  .clock__minute {
+    width: 12px;
+    -webkit-animation: timer 3600s linear infinite;
+            animation: timer 3600s linear infinite; }
+    .clock__minute::before {
+      background: #d15559;
+      height: 40%;
+      width: 12px; }
+  .clock__second {
+    width: 10px;
+    -webkit-animation: timer 60s  1s linear infinite;
+            animation: timer 60s  1s linear infinite; }
+    .clock__second::before {
+      background: #4b9aaa;
+      height: 50%;
+      width: 10px; }
 
 @-webkit-keyframes timer {
   0% {
